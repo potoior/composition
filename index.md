@@ -6,9 +6,9 @@
 
 ​	Dear Mr. Smith,
 
-​	Hope this letter finds you in good spirits and health. I've received your email asking for help with your oral report on an ancient Chinese scientist. It's my pleasure to share some of my personal suggestions.
+​	Hope this letter finds you in good spirits and health. I've received your email asking for help with **your oral report on an ancient Chinese scientist **. It's my pleasure to share some of my personal suggestions.
 
-​	To start with, **deciding the candidates should be addressed first**, and I think it would be a **good idea to choose a scientist whose field of searching you are interested in**. Furthermore, I strongly recommend that you **watch some videos or attend related lectures online**, which will make your preparation **feasible and effective**. Finally, **selecting an appropriate style is always necessary**, as it makes your report both **impressive and coherent**.
+​	To start with, **deciding the candidates should be addressed first**, and I think it would be a **good idea to choose a scientist whose field of searching you are interested in**. Furthermore, I strongly recommend that **you watch some videos or attend related lectures online**, which will make your preparation **feasible and effective**. Finally, **selecting an appropriate style is always necessary**, as it makes your report both **impressive and coherent**.
 
 ​	Hope these suggestions will be helpful to you. Please don't hesitate to let me know if you have any problem. I'm looking forward to your good news.
 
