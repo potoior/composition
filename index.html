@@ -22,6 +22,8 @@ body.typora-export { padding-left: 30px; padding-right: 30px; }
 @media screen and (max-width: 500px) {
   body.typora-export { padding-left: 0px; padding-right: 0px; }
   #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
 }
 #write li > figure:last-child { margin-bottom: 0.5rem; }
 #write ol, #write ul { position: relative; }
@@ -49,7 +51,7 @@ sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inh
 #write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
 figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
 figure > table { margin: 0px; }
-thead, tr { break-inside: avoid; break-after: auto; }
+tr { break-inside: avoid; break-after: auto; }
 thead { display: table-header-group; }
 table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
 table.md-table td { min-width: 32px; }
@@ -71,7 +73,6 @@ div.hr:focus { cursor: none; }
 #write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
 .md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
 .CodeMirror-line, twitterwidget { break-inside: avoid; }
-svg { break-inside: avoid; }
 .footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
 .footnotes + .footnotes { margin-top: 0px; }
 .md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
@@ -86,7 +87,7 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
 #write .footnote-line { white-space: pre-wrap; }
 @media print {
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
-  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; padding-bottom: 0px !important; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
   .typora-export * { -webkit-print-color-adjust: exact; }
   .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
@@ -129,7 +130,6 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 }
 a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
 .footnote-line a:not(.reversefootnote) { color: inherit; }
-.reversefootnote { font-family: ui-monospace, sans-serif; }
 .md-attr { display: none; }
 .md-fn-count::after { content: "."; }
 code, pre, samp, tt { font-family: var(--monospace); }
@@ -199,7 +199,6 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
 .typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
 .md-inline-math-container mjx-container { zoom: 0.95; }
-mjx-container { break-inside: avoid; }
 
 
 :root {
@@ -458,8 +457,11 @@ code {
     html {
         font-size: 13px;
     }
+    table,
     pre {
         page-break-inside: avoid;
+    }
+    pre {
         word-wrap: break-word;
     }
 }
@@ -591,8 +593,7 @@ header, .context-menu, .megamenu-content, footer{
 </style><title>作文 - 副本</title>
 </head>
 <body class='typora-export os-windows'><div class='typora-export-content'>
-<div id='write'  class=''><h1 id='a-comprehensive-template-for-graduate-english-writing-exam-part-ii'><span>A Comprehensive Template for Graduate English Writing Exam (Part II)</span></h1><h2 id='main-template-text'><span>Main Template Text</span></h2><p><strong><span>Dear 【Recipient&#39;s Identity】,</span></strong></p><p><strong><span>I am 【Your Identity】. I am writing this letter with the primary purpose of 【Purpose of the Letter】 concerning the issue of 【Core Topic】.</span></strong></p><p><strong><span>I would be exceedingly grateful if you could spare a few moments to consider the following elaborations, which are aimed at providing a comprehensive perspective on this matter.</span></strong></p><p><strong><span>First and foremost, it would be a highly judicious move to 【Suggestion/Point 1】. This initiative is not only conducive to 【Benefit 1】 but also plays an indispensable role in 【Benefit 2】.</span></strong></p><p><strong><span>Furthermore, I am firmly convinced that considerable benefits could be derived from 【Suggestion/Point 2】. Such a measure, if implemented, would undoubtedly lead to a significant improvement in 【Specific Outcome】, thereby creating a more harmonious and productive environment for all parties involved.</span></strong></p><p><strong><span>Last but certainly not least, I would like to emphatically recommend 【Suggestion/Point 3】. This proposal serves as a crucial cornerstone for 【Long-term Benefit】 in the foreseeable future, as it allows for timely adjustments based on valuable input.</span></strong></p><p><strong><span>I genuinely hope that you will find the aforementioned proposals insightful and worthy of implementation. Thank you very much for your time and consideration. I am eagerly anticipating your positive response at your earliest convenience.</span></strong></p><p><strong><span>Yours sincerely,</span></strong>
-<strong><span>Li Ming</span></strong></p><hr /><h2 id='instructions-for-completion'><span>Instructions for Completion</span></h2><p><span>Simply replace the content within 【】 brackets as follows:</span></p><ul><li><code>【Recipient&#39;s Identity】</code><span>: Recipient&#39;s identity (e.g.: Sir or Madam, Professor Smith, international students)</span></li><li><code>【Your Identity】</code><span>: Your identity (e.g.: a senior student, the president of Student Union)</span></li><li><code>【Purpose of the Letter】</code><span>: Purpose of writing the letter (e.g.: putting forward constructive suggestions, extending a cordial invitation)</span></li><li><code>【Core Topic】</code><span>: Core topic (e.g.: improving campus facilities, the upcoming cultural festival)</span></li><li><code>【Suggestion/Point 1】</code><span>: First suggestion/key point</span></li><li><code>【Benefit 1】</code><span>: First benefit</span></li><li><code>【Benefit 2】</code><span>: Second benefit</span></li><li><code>【Suggestion/Point 2】</code><span>: Second suggestion/key point</span></li><li><code>【Specific Outcome】</code><span>: Specific outcome</span></li><li><code>【Suggestion/Point 3】</code><span>: Third suggestion/key point</span></li><li><code>【Long-term Benefit】</code><span>: Long-term benefit</span></li></ul><hr /><h1 id='universal-template-for-graduate-english-writing-exam-part-ii---essay'><span>Universal Template for Graduate English Writing Exam (Part II - Essay)</span></h1><h2 id='paragraph-1-chart-description'><span>Paragraph 1: Chart Description</span></h2><h3 id='first-sentence-1'><span>First Sentence</span></h3><p><span>The information in the graph clearly shows (topic)</span></p><p><span>Example: The information in the graph clearly shows the different proportions of residents&#39; consumption in a city of China during the Spring Festival</span></p><h3 id='second-sentence-1'><span>Second Sentence</span></h3><p><span>Static chart:</span>
+<div id='write'  class=''><h1 id='-1'></h1><h2 id='main-template-text'><span>Main Template Text</span></h2><p>&nbsp;</p><p><span>	</span><span>Dear Mr. Smith,</span></p><p><span>	</span><span>Hope this letter finds you in good spirits and health. I&#39;ve received your email asking for help with your oral report on an ancient Chinese scientist. It&#39;s my pleasure to share some of my personal suggestions.</span></p><p><span>	</span><span>To start with, </span><strong><span>deciding the candidates should be addressed first</span></strong><span>, and I think it would be a </span><strong><span>good idea to choose a scientist whose field of searching you are interested in</span></strong><span>. Furthermore, I strongly recommend that you </span><strong><span>watch some videos or attend related lectures online</span></strong><span>, which will make your preparation </span><strong><span>feasible and effective</span></strong><span>. Finally, </span><strong><span>selecting an appropriate style is always necessary</span></strong><span>, as it makes your report both </span><strong><span>impressive and coherent</span></strong><span>.</span></p><p><span>	</span><span>Hope these suggestions will be helpful to you. Please don&#39;t hesitate to let me know if you have any problem. I&#39;m looking forward to your good news.</span></p><p><span>Yours sincerely,</span><br/><strong><span>Li Ming</span></strong></p><hr /><h1 id='-2'></h1><h2 id='paragraph-1-chart-description'><span>Paragraph 1: Chart Description</span></h2><h3 id='first-sentence-1'><span>First Sentence</span></h3><p><span>The information in the graph clearly shows (topic)</span></p><p><span>Example: The information in the graph clearly shows the different proportions of residents&#39; consumption in a city of China during the Spring Festival</span></p><h3 id='second-sentence-1'><span>Second Sentence</span></h3><p><span>Static chart:</span>
 <span>X accounts for the highest percentage at x% of key term, followed by B at y% and C, z%. At the bottom of the chart, k% is regarded as D.</span></p><p><span>Example: The number of museums dramatically increased/steeply dropped from 4165/4692 in 2013 to 4692/4165 in 2015</span></p><p><span>Dynamic chart:</span>
 <span>There be + noun phrase + in + data heading + data change (static sentence structure)</span></p><p><span>Example: There was a dramatic increase/steep drop in the number of museums from 4165//4692 in 2013 to 4692/4165 in 2015.</span></p><h3 id='third-sentence-1'><span>Third Sentence</span></h3><p><span>The graph, at the first glimpse, seems to be simple, but the deep meaning behind it is worth pondering.</span></p><h2 id='paragraph-2-cause-analysis'><span>Paragraph 2: Cause Analysis</span></h2><h3 id='first-sentence-2'><span>First Sentence</span></h3><p><span>The contributing factors responsible for this phenomenon can be summarized as follows.</span></p><h3 id='second-sentence-2'><span>Second Sentence</span></h3><p><span>It is generally recognized that nothing is more important than (four universal reasons) for (key term)</span></p><p><span>Example 1: It is generally recognized that nothing is more important than useful/ extensive/ good experience (key term).</span></p><h3 id='third-sentence-2'><span>Third Sentence</span></h3><p><span>Depending upon/Based upon a rough estimate of the relevant department, nearly ? of the respondents hold the same view.</span></p><h3 id='fourth-sentence'><span>Fourth Sentence</span></h3><p><span>(Four universal reasons) exerts (a/an) positive / profound / far-reaching / undesirable influence / effect / impact / impression on (key term)</span></p><p><span>Example 1: Efficient learning / working exerts positive influence on (key term).</span></p><h2 id='paragraph-3-conclusion-and-outlook'><span>Paragraph 3: Conclusion and Outlook</span></h2><h3 id='first-sentence-3'><span>First Sentence</span></h3><p><span>The above-mentioned facts can naturally lead us to the conclusion that great importance should be attached to (key term)</span></p><h3 id='second-sentence-3'><span>Second Sentence</span></h3><p><span>Newspapers and news media should promote publicity of it / launch promotions of it/reveal and prevent it.</span></p><h3 id='third-sentence-3'><span>Third Sentence</span></h3><p><span>If these measures can be taken effectively, a bright future must be on the way.</span></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div></div>
 </body>
