@@ -1,5 +1,3 @@
-# 
-
 ## Main Template Text
 
 
@@ -15,9 +13,7 @@
 Yours sincerely,  
 **Li Ming**
 
----
 
-# 
 
 ## Paragraph 1: Chart Description
 
